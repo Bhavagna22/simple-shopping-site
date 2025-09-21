@@ -8,16 +8,16 @@ const app = express();
 const PORT = 3000;
 
 // --- Middleware ---
-// Serve static files (HTML, CSS, images) from the 'public' directory
+// Serve static files (HTML, CSS, JS) from the 'public' directory
 app.use(express.static('public'));
 
 // --- Mock Product Data ---
 // In a real application, this would come from a database
 const products = [
-    { id: 1, name: 'Classic T-Shirt', price: 15.99, image: 'https://via.placeholder.com/250' },
-    { id: 2, name: 'Denim Jeans', price: 45.50, image: 'https://via.placeholder.com/250' },
-    { id: 3, name: 'Running Sneakers', price: 78.00, image: 'https://via.placeholder.com/250' },
-    { id: 4, name: 'Leather Jacket', price: 120.00, image: 'https://via.placeholder.com/250' }
+    { id: 1, name: 'Classic T-Shirt', price: 499, image: 'https://via.placeholder.com/250' },
+    { id: 2, name: 'Denim Jeans', price: 1299, image: 'https://via.placeholder.com/250' },
+    { id: 3, name: 'Running Sneakers', price: 2499, image: 'https://via.placeholder.com/250' },
+    { id: 4, name: 'Leather Jacket', price: 7999, image: 'https://via.placeholder.com/250' }
 ];
 
 // --- API Route ---

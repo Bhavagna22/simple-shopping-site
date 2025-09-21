@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Online Shop</title>
+    <title>Your Shopping Cart</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -17,15 +17,19 @@
     </header>
 
     <main>
-        <h2>Our Products</h2>
-        <div id="product-container" class="product-grid">
+        <h2>Your Cart</h2>
+        <div id="cart-container">
             </div>
+        <div id="cart-total">
+            <h3>Total: ₹<span id="total-price">0.00</span></h3>
+            <button class="checkout-button">Proceed to Checkout</button>
+        </div>
     </main>
 
     <footer>
         <p>&copy; 2025 Simple Online Shop</p>
     </footer>
 
-    <script src="app.js"></script>
+    <script src="cart.js"></script>
 </body>
 </html>
